@@ -1,112 +1,18 @@
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.Cache
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
-\\fs2\seg\GMC SEG Folder\vb.net\My Applications\ggcRMSReports\obj\Debug\ggcRMSReports.vbprojResolveAssemblyReference.cache
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbprojResolveAssemblyReference.cache
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.Cache
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-\\192.168.10.12\d\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbprojResolveAssemblyReference.cache
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmTerminalSelector.resources
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.Cache
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-Y:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbprojResolveAssemblyReference.cache
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmTerminalSelector.resources
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.Cache
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-D:\PEDRITOS POS\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbprojResolveAssemblyReference.cache
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesSummary.resources
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmTerminalSelector.resources
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.Cache
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-Y:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.AssemblyReference.cache
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.frmRankingCriteria.resources
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesItem.resources
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesSummary.resources
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.frmTerminalSelector.resources
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.cache
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CoreCompileInputs.cache
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CopyComplete
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-D:\Guanzon\Pedritos\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.AssemblyReference.cache
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmRankingCriteria.resources
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesItem.resources
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesSummary.resources
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.frmTerminalSelector.resources
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.cache
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CoreCompileInputs.cache
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CopyComplete
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-D:\POS\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.AssemblyReference.cache
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmRankingCriteria.resources
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesItem.resources
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesSummary.resources
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmTerminalSelector.resources
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.cache
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CoreCompileInputs.cache
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CopyComplete
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-D:\LP POS\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
-C:\GGC_Systems\vb.net\RetMgySys\ggcRMSReports.dll
-C:\GGC_Systems\vb.net\RetMgySys\ggcRMSReports.pdb
-C:\GGC_Systems\vb.net\RetMgySys\ggcRMSReports.xml
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.AssemblyReference.cache
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmRankingCriteria.resources
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesItem.resources
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesSummary.resources
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.frmTerminalSelector.resources
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.cache
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CoreCompileInputs.cache
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CopyComplete
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.dll
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.xml
-D:\Guanzon\GMC SEG Folder\vb.net\TJ\POSold\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
+C:\GGC_Systems\vb.net\RetMgtSys\ggcRMSReports.dll
+C:\GGC_Systems\vb.net\RetMgtSys\ggcRMSReports.pdb
+C:\GGC_Systems\vb.net\RetMgtSys\ggcRMSReports.xml
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.AssemblyReference.cache
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.ResolveComReference.cache
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.frmRankingCriteria.resources
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.frmReportViewer.resources
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesCriteria.resources
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesItem.resources
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.frmSalesSummary.resources
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.frmTerminalSelector.resources
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.Resources.resources
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.GenerateResource.cache
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.CopyComplete
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.dll
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.xml
+C:\Users\User\source\repos\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
