@@ -93,6 +93,8 @@
     <Compile Include="clsDailySalesReport.vb" />
     <Compile Include="clsBirSummary.vb" />
     <Compile Include="clsReturns.vb" />
+    <Compile Include="clsSOASummarized.vb" />
+    <Compile Include="clsSOADetailed.vb" />
     <Compile Include="clsSalesSummary.vb" />
     <Compile Include="clsCancelledReport.vb" />
     <Compile Include="clsCharge.vb" />
@@ -104,6 +106,18 @@
     <Compile Include="clsReports.vb" />
     <Compile Include="clsSalesReport.vb" />
     <Compile Include="clsVoidItems.vb" />
+    <Compile Include="frmSOACriteria.designer.vb">
+      <DependentUpon>frmSOACriteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSOACriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesCriteria.designer.vb">
+      <DependentUpon>frmSalesCriteria.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesCriteria.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmRankingCriteria.Designer.vb">
       <DependentUpon>frmRankingCriteria.vb</DependentUpon>
     </Compile>
@@ -114,12 +128,6 @@
       <DependentUpon>frmSalesItem.vb</DependentUpon>
     </Compile>
     <Compile Include="frmSalesItem.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmOutboundCall.designer.vb">
-      <DependentUpon>frmSalesCriteria.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmSalesCriteria.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmReportViewer.designer.vb">
@@ -158,14 +166,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmSOACriteria.resx">
+      <DependentUpon>frmSOACriteria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesCriteria.resx">
+      <DependentUpon>frmSalesCriteria.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRankingCriteria.resx">
       <DependentUpon>frmRankingCriteria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReportViewer.resx">
       <DependentUpon>frmReportViewer.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmSalesCriteria.resx">
-      <DependentUpon>frmSalesCriteria.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSalesItem.resx">
       <DependentUpon>frmSalesItem.vb</DependentUpon>

@@ -128,3 +128,4 @@ C:\Users\Maynard\Documents\GitHub\ggcRMSReports\obj\Debug\ggcRMSReports.vbproj.C
 C:\Users\Maynard\Documents\GitHub\ggcRMSReports\obj\Debug\ggcRMSReports.dll
 C:\Users\Maynard\Documents\GitHub\ggcRMSReports\obj\Debug\ggcRMSReports.xml
 C:\Users\Maynard\Documents\GitHub\ggcRMSReports\obj\Debug\ggcRMSReports.pdb
+C:\Users\Maynard\Documents\GitHub\ggcRMSReports\obj\Debug\ggcRMSReports.frmSOACriteria.resources

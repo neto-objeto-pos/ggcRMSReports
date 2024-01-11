@@ -42,7 +42,7 @@ Public Class frmSalesCriteria
     End Property
 
 
-    Private Sub cmdButton01_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdButton01.Click
+    Private Sub cmdButton01_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         If Not (IsDate(txtField01.Text) And
                     IsDate(txtField02.Text)) Then
             MsgBox("There are invalid date in the RANGE group." & vbCrLf &
@@ -59,7 +59,7 @@ Public Class frmSalesCriteria
         If p_sForm <> "1" Then Call frmTerminalSelector()
     End Sub
 
-    Private Sub cmdButton00_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdButton00.Click
+    Private Sub cmdButton00_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         p_bCancelled = True
         Me.Hide()
     End Sub
@@ -103,4 +103,5 @@ Public Class frmSalesCriteria
         End If
 
     End Sub
+
 End Class

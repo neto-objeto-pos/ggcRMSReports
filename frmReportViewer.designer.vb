@@ -32,7 +32,7 @@ Partial Class frmReportViewer
         Me.rptViewer.Cursor = System.Windows.Forms.Cursors.Default
         Me.rptViewer.Location = New System.Drawing.Point(-1, 12)
         Me.rptViewer.Name = "rptViewer"
-        Me.rptViewer.Size = New System.Drawing.Size(1024, 768)
+        Me.rptViewer.Size = New System.Drawing.Size(1189, 768)
         Me.rptViewer.TabIndex = 0
         Me.rptViewer.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
@@ -40,7 +40,7 @@ Partial Class frmReportViewer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1018, 739)
+        Me.ClientSize = New System.Drawing.Size(1189, 739)
         Me.Controls.Add(Me.rptViewer)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
