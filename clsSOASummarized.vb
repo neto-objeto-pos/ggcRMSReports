@@ -134,7 +134,7 @@ Public Class clsSOASummarized
 
         'Load the data structure of the Dataset
         'Data structure was saved at DataSet1.xsd 
-        p_oSTRept.ReadXmlSchema(p_oDriver.AppPath & "\vb.net\RetMgySys\Reports\DataSet1.xsd")
+        p_oSTRept.ReadXmlSchema(p_oDriver.AppPath & "\vb.net\RetMgtSys\Reports\DataSet1.xsd")
 
         'Return the schema of the datatable derive from the DataSet 
         Return p_oSTRept.Tables(0)
