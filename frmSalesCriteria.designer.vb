@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmSalesCriteria
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,18 +20,19 @@ Partial Class frmSalesCriteria
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmSalesCriteria))
         Me.gbxPanel01 = New System.Windows.Forms.GroupBox()
         Me.rbtTypex02 = New System.Windows.Forms.RadioButton()
         Me.rbtTypex01 = New System.Windows.Forms.RadioButton()
-        Me.cmdButton01 = New System.Windows.Forms.Button()
-        Me.cmdButton00 = New System.Windows.Forms.Button()
         Me.gbxPanel04 = New System.Windows.Forms.GroupBox()
         Me.txtField02 = New System.Windows.Forms.TextBox()
         Me.txtField01 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.cmdButton01 = New System.Windows.Forms.Button()
+        Me.cmdButton00 = New System.Windows.Forms.Button()
         Me.gbxPanel01.SuspendLayout()
         Me.gbxPanel04.SuspendLayout()
         Me.SuspendLayout()
@@ -69,28 +70,6 @@ Partial Class frmSalesCriteria
         Me.rbtTypex01.TabIndex = 0
         Me.rbtTypex01.Text = "Summary"
         Me.rbtTypex01.UseVisualStyleBackColor = True
-        '
-        'cmdButton01
-        '
-        Me.cmdButton01.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdButton01.Location = New System.Drawing.Point(361, 18)
-        Me.cmdButton01.Name = "cmdButton01"
-        Me.cmdButton01.Size = New System.Drawing.Size(77, 33)
-        Me.cmdButton01.TabIndex = 6
-        Me.cmdButton01.Text = "&Ok"
-        Me.cmdButton01.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.cmdButton01.UseVisualStyleBackColor = True
-        '
-        'cmdButton00
-        '
-        Me.cmdButton00.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cmdButton00.Location = New System.Drawing.Point(361, 52)
-        Me.cmdButton00.Name = "cmdButton00"
-        Me.cmdButton00.Size = New System.Drawing.Size(77, 33)
-        Me.cmdButton00.TabIndex = 7
-        Me.cmdButton00.Text = "&Cancel"
-        Me.cmdButton00.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.cmdButton00.UseVisualStyleBackColor = True
         '
         'gbxPanel04
         '
@@ -137,15 +116,37 @@ Partial Class frmSalesCriteria
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "From"
         '
+        'cmdButton01
+        '
+        Me.cmdButton01.Image = CType(resources.GetObject("cmdButton01.Image"), System.Drawing.Image)
+        Me.cmdButton01.Location = New System.Drawing.Point(361, 12)
+        Me.cmdButton01.Name = "cmdButton01"
+        Me.cmdButton01.Size = New System.Drawing.Size(97, 40)
+        Me.cmdButton01.TabIndex = 7
+        Me.cmdButton01.Text = "&Ok"
+        Me.cmdButton01.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.cmdButton01.UseVisualStyleBackColor = True
+        '
+        'cmdButton00
+        '
+        Me.cmdButton00.Image = CType(resources.GetObject("cmdButton00.Image"), System.Drawing.Image)
+        Me.cmdButton00.Location = New System.Drawing.Point(361, 51)
+        Me.cmdButton00.Name = "cmdButton00"
+        Me.cmdButton00.Size = New System.Drawing.Size(97, 40)
+        Me.cmdButton00.TabIndex = 8
+        Me.cmdButton00.Text = "&Cancel"
+        Me.cmdButton00.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.cmdButton00.UseVisualStyleBackColor = True
+        '
         'frmSalesCriteria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(449, 96)
-        Me.Controls.Add(Me.gbxPanel04)
-        Me.Controls.Add(Me.cmdButton01)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(462, 96)
         Me.Controls.Add(Me.cmdButton00)
+        Me.Controls.Add(Me.cmdButton01)
+        Me.Controls.Add(Me.gbxPanel04)
         Me.Controls.Add(Me.gbxPanel01)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
@@ -164,11 +165,11 @@ Partial Class frmSalesCriteria
     Friend WithEvents gbxPanel01 As System.Windows.Forms.GroupBox
     Friend WithEvents rbtTypex02 As System.Windows.Forms.RadioButton
     Friend WithEvents rbtTypex01 As System.Windows.Forms.RadioButton
-    Friend WithEvents cmdButton01 As System.Windows.Forms.Button
-    Friend WithEvents cmdButton00 As System.Windows.Forms.Button
     Friend WithEvents gbxPanel04 As System.Windows.Forms.GroupBox
     Friend WithEvents txtField01 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtField02 As System.Windows.Forms.TextBox
+    Friend WithEvents cmdButton01 As Windows.Forms.Button
+    Friend WithEvents cmdButton00 As Windows.Forms.Button
 End Class

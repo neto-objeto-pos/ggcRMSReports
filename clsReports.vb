@@ -85,7 +85,7 @@ Public Class clsReports
         p_cRegularx = loDta(0).Item("cRegularx")
         p_cLogRepxx = loDta(0).Item("cLogRepxx")
 
-        p_oReport.Load(p_oDriver.AppPath & "\vb.net\RetMgySys\Reports\" & loDta(0).Item("sFileName") & ".rpt")
+        p_oReport.Load(p_oDriver.AppPath & "\vb.net\RetMgtSys\Reports\" & loDta(0).Item("sFileName") & ".rpt")
         Return True
 
     End Function
