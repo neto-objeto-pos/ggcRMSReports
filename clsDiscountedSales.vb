@@ -211,7 +211,8 @@ Public Class clsDiscountedSales
 
         Dim loTxtObj As CrystalDecisions.CrystalReports.Engine.TextObject
         loTxtObj = loRpt.ReportDefinition.Sections(0).ReportObjects("txtCompany")
-        loTxtObj.Text = "Meet 'n' Eat"
+        'loTxtObj.Text = "Meet 'n' Eat"
+        loTxtObj.Text = p_oDriver.BranchName
 
         'Set Branch Address
         loTxtObj = loRpt.ReportDefinition.Sections(0).ReportObjects("txtAddress")
