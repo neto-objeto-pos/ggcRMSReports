@@ -41,10 +41,9 @@ Public Class frmSalesCriteria
         End Get
     End Property
 
-
-    Private Sub cmdButton01_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub cmdButton01_Click(sender As Object, e As EventArgs) Handles cmdButton01.Click
         If Not (IsDate(txtField01.Text) And
-                    IsDate(txtField02.Text)) Then
+            IsDate(txtField02.Text)) Then
             MsgBox("There are invalid date in the RANGE group." & vbCrLf &
                    "Please check your entry try again!", vbOKOnly, "Parameter Validation")
             Exit Sub
@@ -56,10 +55,10 @@ Public Class frmSalesCriteria
 
         p_bCancelled = False
         Me.Hide()
-        If p_sForm <> "1" Then Call frmTerminalSelector()
+
     End Sub
 
-    Private Sub cmdButton00_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub cmdButton00_Click(sender As Object, e As EventArgs) Handles cmdButton00.Click
         p_bCancelled = True
         Me.Hide()
     End Sub
@@ -83,6 +82,15 @@ Public Class frmSalesCriteria
     Private Sub frmSalesCriteria_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         txtField01.Text = Format(Now(), "yyyy-MM-dd")
         txtField02.Text = Format(Now(), "yyyy-MM-dd")
+
+        If p_sForm <> "1" Then
+            Me.Hide()
+            Call frmTerminalSelector()
+            p_bCancelled = False
+
+
+        End If
+        Me.Show()
     End Sub
 
     Private Sub frmTerminalSelector()
