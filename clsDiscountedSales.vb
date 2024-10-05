@@ -57,7 +57,7 @@ Public Class clsDiscountedSales
         lsSQL = "SELECT" &
                     " a.sTransNox      `sTransNox`," &
                     " a.dTransact      `dTransact`," &
-                    " CONCAT('SI', a.sORNumber)      `sInvceNox`," &
+                    " CONCAT('OR', a.sORNumber)      `sInvceNox`," &
                     " a.nSalesAmt      `nNetAmntx`," &
                     " a.nVATSales      `nVATSales`," &
                     " a.nVATAmtxx      `nVATAmtxx`," &
@@ -108,7 +108,7 @@ Public Class clsDiscountedSales
                 " UNION SELECT" &
                     " a.sTransNox       `sTransNox`," &
                     " a.dTransact       `dTransact`," &
-                    " CONCAT('SI', a.sORNumber)       `sInvceNox`," &
+                    " CONCAT('OR', a.sORNumber)       `sInvceNox`," &
                     " a.nSalesAmt       `nNetAmntx`," &
                     " a.nVATSales       `nVATSales`," &
                     " a.nVATAmtxx       `nVATAmtxx`," &
