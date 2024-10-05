@@ -213,8 +213,8 @@ Public Class clsBirSummary
 
         Dim loTxtObj As CrystalDecisions.CrystalReports.Engine.TextObject
         loTxtObj = loRpt.ReportDefinition.Sections(0).ReportObjects("txtCompany")
-        'loTxtObj.Text = p_oDriver.BranchName
-        loTxtObj.Text = "Meet 'n' Eat"
+        loTxtObj.Text = p_oDriver.BranchName
+        'loTxtObj.Text = "Meet 'n' Eat"
 
 
         'Set Branch Address

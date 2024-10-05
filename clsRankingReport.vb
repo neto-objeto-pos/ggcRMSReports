@@ -161,7 +161,7 @@ Public Class clsRankingReport
             If p_sTransNox = p_oDTSrce(lnCtr).Item("Transaction No.") Then
                 p_sTranDate = p_oDTSrce(lnCtr).Item("DATE")
                 p_sBarrcode = p_oDTSrce(lnCtr).Item("Barrcode")
-                p_sCategory = p_oDTSrce(lnCtr).Item("Category")
+                p_sCategory = IFNull(p_oDTSrce(lnCtr).Item("Category"), "")
                 p_sDescrption = p_oDTSrce(lnCtr).Item("Item Description")
                 p_sOrderType = p_oDTSrce(lnCtr).Item("ORDER TYPE")
                 p_nQty = p_oDTSrce(lnCtr).Item("QTY")

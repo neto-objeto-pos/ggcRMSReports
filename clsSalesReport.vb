@@ -57,7 +57,7 @@ Public Class clsSalesReport
                     " a.sTransNox      `sTransNox`," &
                     " a.dTransact      `dTransact`," &
                     " a.cTranStat       `cTranStat`," &
-                    " CONCAT('OR', a.sORNumber)      `sInvceNox`," &
+                    " CONCAT('SI', a.sORNumber)      `sInvceNox`," &
                     " a.nSalesAmt      `nNetAmntx`," &
                     " a.nVATSales      `nVATSales`," &
                     " a.nVATAmtxx      `nVATAmtxx`," &
@@ -108,7 +108,7 @@ Public Class clsSalesReport
                     " a.sTransNox       `sTransNox`," &
                     " a.dTransact       `dTransact`," &
                     " a.cTranStat       `cTranStat`," &
-                    " CONCAT('OR', a.sORNumber)       `sInvceNox`," &
+                    " CONCAT('SI', a.sORNumber)       `sInvceNox`," &
                     " a.nSalesAmt       `nNetAmntx`," &
                     " a.nVATSales       `nVATSales`," &
                     " a.nVATAmtxx       `nVATAmtxx`," &
@@ -217,7 +217,8 @@ Public Class clsSalesReport
 
         Dim loTxtObj As CrystalDecisions.CrystalReports.Engine.TextObject
         loTxtObj = loRpt.ReportDefinition.Sections(0).ReportObjects("txtCompany")
-        loTxtObj.Text = "Meet 'n' Eat"
+        'loTxtObj.Text = "Meet 'n' Eat"
+        loTxtObj.Text = p_oDriver.BranchName
 
         'Set Branch Address
         loTxtObj = loRpt.ReportDefinition.Sections(0).ReportObjects("txtAddress")

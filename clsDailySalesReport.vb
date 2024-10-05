@@ -216,8 +216,8 @@ Public Class clsDailySalesReport
 
 
         'Set Branch Address
-        loTxtObj = loRpt.ReportDefinition.Sections(0).ReportObjects("txtAddress")
-        loTxtObj.Text = p_oDriver.Address & ", " & p_oDriver.TownCity & " " & p_oDriver.ZippCode & ", " & p_oDriver.Province
+        'loTxtObj = loRpt.ReportDefinition.Sections(0).ReportObjects("txtAddress")
+        'loTxtObj.Text = p_oDriver.Address & ", " & p_oDriver.TownCity & " " & p_oDriver.ZippCode & ", " & p_oDriver.Province
 
         'Set First Header
         'loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("txtHeading1") 
@@ -227,11 +227,11 @@ Public Class clsDailySalesReport
         loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("txtHeading2")
         loTxtObj.Text = Format(p_dFromDate, xsDATE_LONG) & " to " & Format(p_dThruDate, xsDATE_LONG)
 
-        loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("lblTerminal")
-        loTxtObj.Text = "Terminal No. " & p_sMachinex
+        'loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("lblTerminal")
+        'loTxtObj.Text = "Terminal No. " & p_sMachinex
 
-        loTxtObj = loRpt.ReportDefinition.Sections(3).ReportObjects("txtRptUser")
-        loTxtObj.Text = Decrypt(p_oDriver.UserName, "08220326")
+        'loTxtObj = loRpt.ReportDefinition.Sections(3).ReportObjects("txtRptUser")
+        'loTxtObj.Text = Decrypt(p_oDriver.UserName, "08220326")
 
         'POS Info
         'loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("txtVATReg")
