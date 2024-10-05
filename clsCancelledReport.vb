@@ -51,102 +51,102 @@ Public Class clsCancelledReport
 
         Dim lsSQL As String 'whole statement
 
-        lsSQL = "SELECT" & _
-                    " a.sTransNox      `sTransNox`," & _
-                    " a.dTransact      `dTransact`," & _
-                    " CONCAT('OR', a.sORNumber)      `sInvceNox`," & _
-                    " a.nSalesAmt      `nNetAmntx`," & _
-                    " a.nVATSales      `nVATSales`," & _
-                    " a.nVATAmtxx      `nVATAmtxx`," & _
-                    " a.nZeroRatd      `nZeroRatd`," & _
-                    " a.nDiscount      `nDiscount`," & _
-                    " a.nVatDiscx      `nVatDiscx`," & _
-                    " a.nPWDDiscx      `nPWDDiscx`," & _
-                    " a.nTendered      `nTendered`," & _
-                    " a.nCashAmtx      `nCashAmtx`," & _
-                    " a.sSourceCd      `sSourceCd`," & _
-                    " a.sSourceNo      `sSourceNo`," & _
-                    " a.nSChargex      `nSChargex`," & _
-                    " b.sTableNox      `sTableNox`," & _
-                    " g.sUserName      `sCashierx`," & _
-                    " c.nEntryNox      `nEntryNox`," & _
-                    " c.sStockIDx      `sStockIDx`," & _
-                    " d.sBriefDsc      `sBriefDsc`," & _
-                    " c.cReversex      `cReversex`," & _
-                    " c.nQuantity      `nQuantity`," & _
-                    " c.nUnitPrce      `nUnitPrce`," & _
-                    " c.nComplmnt      `nComplmnt`," & _
-                    " c.cDetailxx      `cDetailxx`," & _
-                    " 'Sales Order'    `xRemarksx`," & _
-                    " f.sCardDesc      `sCardDesc`," & _
-                    " e.nNoClient      `nNoClient`," & _
-                    " e.nWithDisc      `nWithDisc`," & _
-                    " e.nAddDiscx      `nAddDiscx`," & _
-                    " e.nDiscRate      `nDiscRate`" & _
-                " FROM Receipt_Master a" & _
-                        " LEFT JOIN xxxSysUser g" & _
-                            " ON a.sCashierx = g.sUserIDxx," & _
-                    " SO_Master b" & _
-                        " LEFT JOIN SO_Detail c" & _
-                            " ON b.sTransNox = c.sTransNox" & _
-                        " LEFT JOIN Inventory d" & _
-                            " ON c.sStockIDx = d.sStockIDx" & _
-                        " LEFT JOIN Discount e" & _
-                            " ON e.sSourceCd = 'SO'" & _
-                            " AND b.sTransNox = e.sSourceNo" & _
-                        " LEFT JOIN Discount_Card f" & _
-                            " ON e.sDiscCard = f.sCardIDxx" & _
-                " WHERE a.sSourceNo = b.sTransNox" & _
-                    " AND a.sSourceCd = 'SO'" & _
-                    " AND a.cTranStat = '3'" & _
-                    " AND c.cReversed <> '1'" & _
-                    " AND a.sTransNox LIKE " & strParm(p_oDriver.BranchCode + p_sTerminal + "%") & _
-                    " AND a.dTransact BETWEEN " & dateParm(p_dFromDate) & " AND " & dateParm(p_dThruDate) & _
-                " UNION SELECT" & _
-                    " a.sTransNox       `sTransNox`," & _
-                    " a.dTransact       `dTransact`," & _
-                    " CONCAT('OR', a.sORNumber)       `sInvceNox`," & _
-                    " a.nSalesAmt       `nNetAmntx`," & _
-                    " a.nVATSales       `nVATSales`," & _
-                    " a.nVATAmtxx       `nVATAmtxx`," & _
-                    " a.nZeroRatd       `nZeroRatd`," & _
-                    " a.nDiscount       `nDiscount`," & _
-                    " a.nVatDiscx       `nVatDiscx`," & _
-                    " a.nPWDDiscx       `nPWDDiscx`," & _
-                    " a.nTendered       `nTendered`," & _
-                    " a.nCashAmtx       `nCashAmtx`," & _
-                    " a.sSourceCd       `sSourceCd`," & _
-                    " a.sSourceNo       `sSourceNo`," & _
-                    " a.nSChargex       `nSChargex`," & _
-                    " 'n/a'             `sTableNox`," & _
-                    " e.sUserName       `sCashierx`," & _
-                    " c.nEntryNox       `nEntryNox`," & _
-                    " c.sStockIDx       `sStockIDx`," & _
-                    " IFNULL(d.sBriefDsc, 'Meals')    `sBriefDsc`," & _
-                    " ''                `cReversex`," & _
-                    " c.nQuantity       `nQuantity`," & _
-                    " c.nUnitPrce       `nUnitPrce`," & _
-                    " '0'               `nComplmnt`," & _
-                    " ''                `cDetailxx`," & _
-                    " 'Split Order'     `xRemarksx`," & _
-                    " ''                `sCardDesc`," & _
-                    " ''                `nNoClient`," & _
-                    " ''                `nWithDisc`," & _
-                    " '0.00'            `nAddDiscx`," & _
-                    " '0.00'            `nDiscRate`" & _
-                " FROM Receipt_Master a" & _
-                        " LEFT JOIN xxxSysUser e" & _
-                            " ON a.sCashierx = e.sUserIDxx," & _
-                    " Order_Split b" & _
-                        " LEFT JOIN Order_Split_Detail c" & _
-                            " ON b.sTransNox = c.sTransNox" & _
-                        " LEFT JOIN Inventory d" & _
-                            " ON c.sStockIDx = d.sStockIDx" & _
-                " WHERE a.sSourceNo = b.sTransNox" & _
-                    " AND a.sSourceCd = 'SOSp'" & _
-                    " AND a.cTranStat = '3'" & _
-                    " AND a.sTransNox LIKE " & strParm(p_oDriver.BranchCode + p_sTerminal + "%") & _
-                    " AND a.dTransact BETWEEN " & dateParm(p_dFromDate) & " AND " & dateParm(p_dThruDate) & _
+        lsSQL = "SELECT" &
+                    " a.sTransNox      `sTransNox`," &
+                    " a.dTransact      `dTransact`," &
+                    " CONCAT('SI', a.sORNumber)      `sInvceNox`," &
+                    " a.nSalesAmt      `nNetAmntx`," &
+                    " a.nVATSales      `nVATSales`," &
+                    " a.nVATAmtxx      `nVATAmtxx`," &
+                    " a.nZeroRatd      `nZeroRatd`," &
+                    " a.nDiscount      `nDiscount`," &
+                    " a.nVatDiscx      `nVatDiscx`," &
+                    " a.nPWDDiscx      `nPWDDiscx`," &
+                    " a.nTendered      `nTendered`," &
+                    " a.nCashAmtx      `nCashAmtx`," &
+                    " a.sSourceCd      `sSourceCd`," &
+                    " a.sSourceNo      `sSourceNo`," &
+                    " a.nSChargex      `nSChargex`," &
+                    " b.sTableNox      `sTableNox`," &
+                    " g.sUserName      `sCashierx`," &
+                    " c.nEntryNox      `nEntryNox`," &
+                    " c.sStockIDx      `sStockIDx`," &
+                    " d.sBriefDsc      `sBriefDsc`," &
+                    " c.cReversex      `cReversex`," &
+                    " c.nQuantity      `nQuantity`," &
+                    " c.nUnitPrce      `nUnitPrce`," &
+                    " c.nComplmnt      `nComplmnt`," &
+                    " c.cDetailxx      `cDetailxx`," &
+                    " 'Sales Order'    `xRemarksx`," &
+                    " f.sCardDesc      `sCardDesc`," &
+                    " e.nNoClient      `nNoClient`," &
+                    " e.nWithDisc      `nWithDisc`," &
+                    " e.nAddDiscx      `nAddDiscx`," &
+                    " e.nDiscRate      `nDiscRate`" &
+                " FROM Receipt_Master a" &
+                        " LEFT JOIN xxxSysUser g" &
+                            " ON a.sCashierx = g.sUserIDxx," &
+                    " SO_Master b" &
+                        " LEFT JOIN SO_Detail c" &
+                            " ON b.sTransNox = c.sTransNox" &
+                        " LEFT JOIN Inventory d" &
+                            " ON c.sStockIDx = d.sStockIDx" &
+                        " LEFT JOIN Discount e" &
+                            " ON e.sSourceCd = 'SO'" &
+                            " AND b.sTransNox = e.sSourceNo" &
+                        " LEFT JOIN Discount_Card f" &
+                            " ON e.sDiscCard = f.sCardIDxx" &
+                " WHERE a.sSourceNo = b.sTransNox" &
+                    " AND a.sSourceCd = 'SO'" &
+                    " AND a.cTranStat = '3'" &
+                    " AND c.cReversed <> '1'" &
+                    " AND a.sTransNox LIKE " & strParm(p_oDriver.BranchCode + p_sTerminal + "%") &
+                    " AND a.dTransact BETWEEN " & dateParm(p_dFromDate) & " AND " & dateParm(p_dThruDate) &
+                " UNION SELECT" &
+                    " a.sTransNox       `sTransNox`," &
+                    " a.dTransact       `dTransact`," &
+                    " CONCAT('SI', a.sORNumber)       `sInvceNox`," &
+                    " a.nSalesAmt       `nNetAmntx`," &
+                    " a.nVATSales       `nVATSales`," &
+                    " a.nVATAmtxx       `nVATAmtxx`," &
+                    " a.nZeroRatd       `nZeroRatd`," &
+                    " a.nDiscount       `nDiscount`," &
+                    " a.nVatDiscx       `nVatDiscx`," &
+                    " a.nPWDDiscx       `nPWDDiscx`," &
+                    " a.nTendered       `nTendered`," &
+                    " a.nCashAmtx       `nCashAmtx`," &
+                    " a.sSourceCd       `sSourceCd`," &
+                    " a.sSourceNo       `sSourceNo`," &
+                    " a.nSChargex       `nSChargex`," &
+                    " 'n/a'             `sTableNox`," &
+                    " e.sUserName       `sCashierx`," &
+                    " c.nEntryNox       `nEntryNox`," &
+                    " c.sStockIDx       `sStockIDx`," &
+                    " IFNULL(d.sBriefDsc, 'Meals')    `sBriefDsc`," &
+                    " ''                `cReversex`," &
+                    " c.nQuantity       `nQuantity`," &
+                    " c.nUnitPrce       `nUnitPrce`," &
+                    " '0'               `nComplmnt`," &
+                    " ''                `cDetailxx`," &
+                    " 'Split Order'     `xRemarksx`," &
+                    " ''                `sCardDesc`," &
+                    " ''                `nNoClient`," &
+                    " ''                `nWithDisc`," &
+                    " '0.00'            `nAddDiscx`," &
+                    " '0.00'            `nDiscRate`" &
+                " FROM Receipt_Master a" &
+                        " LEFT JOIN xxxSysUser e" &
+                            " ON a.sCashierx = e.sUserIDxx," &
+                    " Order_Split b" &
+                        " LEFT JOIN Order_Split_Detail c" &
+                            " ON b.sTransNox = c.sTransNox" &
+                        " LEFT JOIN Inventory d" &
+                            " ON c.sStockIDx = d.sStockIDx" &
+                " WHERE a.sSourceNo = b.sTransNox" &
+                    " AND a.sSourceCd = 'SOSp'" &
+                    " AND a.cTranStat = '3'" &
+                    " AND a.sTransNox LIKE " & strParm(p_oDriver.BranchCode + p_sTerminal + "%") &
+                    " AND a.dTransact BETWEEN " & dateParm(p_dFromDate) & " AND " & dateParm(p_dThruDate) &
                 " ORDER BY `sInvceNox`"
 
         p_oDTSrce = p_oDriver.ExecuteQuery(lsSQL)

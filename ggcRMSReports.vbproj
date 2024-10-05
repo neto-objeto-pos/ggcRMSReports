@@ -133,6 +133,7 @@
     <Compile Include="clsReports.vb" />
     <Compile Include="clsSalesReport.vb" />
     <Compile Include="clsVoidItems.vb" />
+    <Compile Include="clsZReadingSummary.vb" />
     <Compile Include="frmSOACriteria.designer.vb">
       <DependentUpon>frmSOACriteria.vb</DependentUpon>
     </Compile>
@@ -198,6 +199,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSalesCriteria.resx">
       <DependentUpon>frmSalesCriteria.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRankingCriteria.resx">
       <DependentUpon>frmRankingCriteria.vb</DependentUpon>

@@ -57,7 +57,7 @@ Public Class clsSalesReport
                     " a.sTransNox      `sTransNox`," &
                     " a.dTransact      `dTransact`," &
                     " a.cTranStat       `cTranStat`," &
-                    " CONCAT('OR', a.sORNumber)      `sInvceNox`," &
+                    " CONCAT('SI', a.sORNumber)      `sInvceNox`," &
                     " a.nSalesAmt      `nNetAmntx`," &
                     " a.nVATSales      `nVATSales`," &
                     " a.nVATAmtxx      `nVATAmtxx`," &
@@ -108,7 +108,7 @@ Public Class clsSalesReport
                     " a.sTransNox       `sTransNox`," &
                     " a.dTransact       `dTransact`," &
                     " a.cTranStat       `cTranStat`," &
-                    " CONCAT('OR', a.sORNumber)       `sInvceNox`," &
+                    " CONCAT('SI', a.sORNumber)       `sInvceNox`," &
                     " a.nSalesAmt       `nNetAmntx`," &
                     " a.nVATSales       `nVATSales`," &
                     " a.nVATAmtxx       `nVATAmtxx`," &

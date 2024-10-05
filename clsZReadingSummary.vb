@@ -234,7 +234,7 @@ Public Class clsZReadingSummary
         loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("txtField12") 'vat sales
         loTxtObj.Text = Format(lnVATSales, xsDECIMAL)
         loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("txtField13")  'vat amount
-        loTxtObj.Text = Format(lnVATAmtxx - lnVatDiscx, xsDECIMAL)
+        loTxtObj.Text = Format(lnVATAmtxx , xsDECIMAL)
         loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("txtField14") 'vat exempt sales
         loTxtObj.Text = Format(lnNonVATxx, xsDECIMAL)
         loTxtObj = loRpt.ReportDefinition.Sections(1).ReportObjects("txtField15") 'zero rated sales
