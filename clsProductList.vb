@@ -22,16 +22,16 @@ Public Class clsProductList
 
         Dim lsSQL As String 'whole statement
 
-        lsSQL = "SELECT" & _
-                     "  a.sBarcodex `sBarcodex`" & _
-                     ", a.sDescript `sDescript`" & _
-                     ", a.sBriefDsc `sBriefDsc`" & _
-                     ", b.sDescript `xCategrNm`" & _
-                     ", a.nSelPrice `nSelPrice`" & _
-                     ", IF(a.cRecdStat = 1, 'Active', 'Inactive') `cRecdStat`" & _
-                " FROM Inventory a" & _
-                    ", Product_Category b" & _
-                " WHERE a.sCategrID = b.sCategrCd" & _
+        lsSQL = "SELECT" &
+                     "  a.sBarcodex `sBarcodex`" &
+                     ", a.sDescript `sDescript`" &
+                     ", a.sBriefDsc `sBriefDsc`" &
+                     ", b.sDescript `xCategrNm`" &
+                     ", a.nSelPrice `nSelPrice`" &
+                     ", IF(a.cRecdStat = 1, 'Active', 'Inactive') `cRecdStat`" &
+                " FROM Inventory a" &
+                    ", Product_Category b" &
+                " WHERE a.sCategrID = b.sCategrCd" &
                 " ORDER BY xCategrNm ASC, sDescript ASC"
 
         p_oDTSrce = p_oDriver.ExecuteQuery(lsSQL)
