@@ -57,50 +57,50 @@ Public Class clsBirSummary
 
         Dim lsSQL As String 'whole statement
         If p_sTerminal <> "" Then
-            lsSQL = "SELECT" & _
-                    "  sTranDate" & _
-                    ", nSalesAmt" & _
-                    ", nVATSales" & _
-                    ", nVATAmtxx" & _
-                    ", nNonVATxx" & _
-                    ", nZeroRatd" & _
-                    ", nDiscount" & _
-                    ", nVatDiscx" & _
-                    ", nPWDDiscx" & _
-                    ", nSChargex" & _
-                    ", nReturnsx" & _
-                    ", nVoidAmnt" & _
-                    ", sORNoFrom" & _
-                    ", sORNoThru" & _
-                    ", dOpenedxx" & _
-                    ", dClosedxx" & _
-               " FROM Daily_Summary" & _
-               " WHERE cTranStat = '2'" & _
-                   " AND sCRMNumbr LIKE " & strParm("%" + p_sTerminal.Substring(1)) & _
-                   " AND sTranDate BETWEEN " & Replace(dateParm(p_dFromDate), "-", "") & " AND " & Replace(dateParm(p_dThruDate), "-", "") & _
+            lsSQL = "SELECT" &
+                    "  sTranDate" &
+                    ", nSalesAmt" &
+                    ", nVATSales" &
+                    ", nVATAmtxx" &
+                    ", nNonVATxx" &
+                    ", nZeroRatd" &
+                    ", nDiscount" &
+                    ", nVatDiscx" &
+                    ", nPWDDiscx" &
+                    ", nSChargex" &
+                    ", nReturnsx" &
+                    ", nVoidAmnt" &
+                    ", sORNoFrom" &
+                    ", sORNoThru" &
+                    ", dOpenedxx" &
+                    ", dClosedxx" &
+               " FROM Daily_Summary" &
+               " WHERE cTranStat = '2'" &
+                   " AND sCRMNumbr LIKE " & strParm("%" + p_sTerminal.Substring(1)) &
+                   " AND sTranDate BETWEEN " & Replace(dateParm(p_dFromDate), "-", "") & " AND " & Replace(dateParm(p_dThruDate), "-", "") &
                " ORDER BY sTranDate, dOpenedxx"
         Else
-            lsSQL = "SELECT" & _
-                         "  sTranDate" & _
-                         ", nSalesAmt" & _
-                         ", nVATSales" & _
-                         ", nVATAmtxx" & _
-                         ", nNonVATxx" & _
-                         ", nZeroRatd" & _
-                         ", nDiscount" & _
-                         ", nVatDiscx" & _
-                         ", nPWDDiscx" & _
-                         ", nSChargex" & _
-                         ", nReturnsx" & _
-                         ", nVoidAmnt" & _
-                         ", sORNoFrom" & _
-                         ", sORNoThru" & _
-                         ", dOpenedxx" & _
-                         ", dClosedxx" & _
-                    " FROM Daily_Summary" & _
-                    " WHERE cTranStat = '2'" & _
-                        " AND sCRMNumbr = " & strParm(p_sMachinex) & _
-                        " AND sTranDate BETWEEN " & Replace(dateParm(p_dFromDate), "-", "") & " AND " & Replace(dateParm(p_dThruDate), "-", "") & _
+            lsSQL = "SELECT" &
+                         "  sTranDate" &
+                         ", nSalesAmt" &
+                         ", nVATSales" &
+                         ", nVATAmtxx" &
+                         ", nNonVATxx" &
+                         ", nZeroRatd" &
+                         ", nDiscount" &
+                         ", nVatDiscx" &
+                         ", nPWDDiscx" &
+                         ", nSChargex" &
+                         ", nReturnsx" &
+                         ", nVoidAmnt" &
+                         ", sORNoFrom" &
+                         ", sORNoThru" &
+                         ", dOpenedxx" &
+                         ", dClosedxx" &
+                    " FROM Daily_Summary" &
+                    " WHERE cTranStat = '2'" &
+                        " AND sCRMNumbr = " & strParm(p_sMachinex) &
+                        " AND sTranDate BETWEEN " & Replace(dateParm(p_dFromDate), "-", "") & " AND " & Replace(dateParm(p_dThruDate), "-", "") &
                     " ORDER BY sTranDate, dOpenedxx"
         End If
 
@@ -125,8 +125,8 @@ Public Class clsBirSummary
         oProg.ShowTitle("LOADING RECORDS")
         oProg.MaxValue = p_oDTSrce.Rows.Count
 
-        lsSQL = "SELECT dOpenedxx, dClosedxx, nAccuSale FROM Daily_Summary" & _
-                    " WHERE dClosedxx < " & datetimeParm(p_oDTSrce(0).Item("dOpenedxx")) & _
+        lsSQL = "SELECT dOpenedxx, dClosedxx, nAccuSale FROM Daily_Summary" &
+                    " WHERE dClosedxx < " & datetimeParm(p_oDTSrce(0).Item("dOpenedxx")) &
                     " ORDER BY dOpenedxx DESC LIMIT 1"
         Dim loDta As DataTable
         loDta = p_oDriver.ExecuteQuery(lsSQL)
@@ -151,14 +151,15 @@ Public Class clsBirSummary
                     p_sORNoThru = p_oDTSrce(lnCtr).Item("sORNoThru")
                 End If
 
-                p_nNetTotal += p_oDTSrce(lnCtr).Item("nSalesAmt") - (p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nDiscount") + p_oDTSrce(lnCtr).Item("nVatDiscx"))
+                'p_nNetTotal += p_oDTSrce(lnCtr).Item("nSalesAmt") - (p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nDiscount") + p_oDTSrce(lnCtr).Item("nVatDiscx"))
+                p_nNetTotal += p_oDTSrce(lnCtr).Item("nSalesAmt")
                 p_nSCDiscxx += p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nVatDiscx")
                 p_nRegularx += p_oDTSrce(lnCtr).Item("nDiscount")
-                p_nEndngBal += p_oDTSrce(lnCtr).Item("nSalesAmt") - (p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nDiscount") + p_oDTSrce(lnCtr).Item("nVatDiscx"))
+                p_nEndngBal += p_oDTSrce(lnCtr).Item("nSalesAmt")
                 p_nReturnxx += p_oDTSrce(lnCtr).Item("nReturnsx")
                 p_nVoidxxxx += p_oDTSrce(lnCtr).Item("nVoidAmnt")
                 'p_nGrossTtl += p_oDTSrce(lnCtr).Item("nSalesAmt") + p_oDTSrce(lnCtr).Item("nReturnsx") + p_oDTSrce(lnCtr).Item("nVoidAmnt")
-                p_nGrossTtl += p_oDTSrce(lnCtr).Item("nSalesAmt") + p_oDTSrce(lnCtr).Item("nReturnsx") + p_oDTSrce(lnCtr).Item("nSChargex")
+                p_nGrossTtl += p_oDTSrce(lnCtr).Item("nSalesAmt") + p_oDTSrce(lnCtr).Item("nReturnsx") + p_oDTSrce(lnCtr).Item("nSChargex") + (p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nDiscount") + p_oDTSrce(lnCtr).Item("nVatDiscx"))
                 p_nSrvcCrge += p_oDTSrce(lnCtr).Item("nSChargex")
                 p_nVATablex += p_oDTSrce(lnCtr).Item("nVATSales")
                 p_nVATAmntx += p_oDTSrce(lnCtr).Item("nVATAmtxx")
@@ -168,15 +169,16 @@ Public Class clsBirSummary
                 p_sORNoFrom = p_oDTSrce(lnCtr).Item("sORNoFrom")
                 p_sORNoThru = p_oDTSrce(lnCtr).Item("sORNoThru")
 
-                p_nNetTotal = p_oDTSrce(lnCtr).Item("nSalesAmt") - (p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nDiscount") + p_oDTSrce(lnCtr).Item("nVatDiscx"))
+                'p_nNetTotal = p_oDTSrce(lnCtr).Item("nSalesAmt") - (p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nDiscount") + p_oDTSrce(lnCtr).Item("nVatDiscx"))
+                p_nNetTotal = p_oDTSrce(lnCtr).Item("nSalesAmt")
                 p_nSCDiscxx = p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nVatDiscx")
                 p_nRegularx = p_oDTSrce(lnCtr).Item("nDiscount")
                 p_nBegBalxx = p_nEndngBal
-                p_nEndngBal = p_oDTSrce(lnCtr).Item("nSalesAmt") - (p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nDiscount") + p_oDTSrce(lnCtr).Item("nVatDiscx"))
+                p_nEndngBal = p_oDTSrce(lnCtr).Item("nSalesAmt")
                 p_nReturnxx = p_oDTSrce(lnCtr).Item("nReturnsx")
                 p_nVoidxxxx = p_oDTSrce(lnCtr).Item("nVoidAmnt")
                 'p_nGrossTtl = p_oDTSrce(lnCtr).Item("nSalesAmt") + p_oDTSrce(lnCtr).Item("nReturnsx") + p_oDTSrce(lnCtr).Item("nVoidAmnt")
-                p_nGrossTtl = p_oDTSrce(lnCtr).Item("nSalesAmt") + p_oDTSrce(lnCtr).Item("nReturnsx") + p_oDTSrce(lnCtr).Item("nSChargex")
+                p_nGrossTtl = p_oDTSrce(lnCtr).Item("nSalesAmt") + p_oDTSrce(lnCtr).Item("nReturnsx") + p_oDTSrce(lnCtr).Item("nSChargex") + (p_oDTSrce(lnCtr).Item("nPWDDiscx") + p_oDTSrce(lnCtr).Item("nDiscount") + p_oDTSrce(lnCtr).Item("nVatDiscx"))
                 p_nSrvcCrge = p_oDTSrce(lnCtr).Item("nSChargex")
                 p_nVATablex = p_oDTSrce(lnCtr).Item("nVATSales")
                 p_nVATAmntx = p_oDTSrce(lnCtr).Item("nVATAmtxx")
@@ -311,10 +313,10 @@ Public Class clsBirSummary
         p_oDTSrce = Nothing
     End Sub
 
-    Public Sub New(ByVal foRider As GRider, _
-                   ByVal foMachineNo As String, _
-                   ByVal foSerialNo As String, _
-                   ByVal foPermitNo As String, _
+    Public Sub New(ByVal foRider As GRider,
+                   ByVal foMachineNo As String,
+                   ByVal foSerialNo As String,
+                   ByVal foPermitNo As String,
                    ByVal foVATReg As String)
         p_oDriver = foRider
         p_oSTRept = Nothing
